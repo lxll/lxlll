@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="showBooks" class="hit.cs.kevin.ManageBooksAction" method="list">
+	    	<result name="success">/bookList.jsp</result>
+		</action>
+		<action name="backHome" class="hit.cs.kevin.ManageBooksAction" method="list">
+	    	<result name="success">/bookList.jsp</result>
+		</action>
+		<action name="Details" class="hit.cs.kevin.ManageBooksAction" method="details">
+            <result >Details.jsp</result>
+        </action>
+        <action name="Delete" class="hit.cs.kevin.ManageBooksAction" method="delete">
+            <result type="redirect">showBooks.action</result>
+        </action>
+        <action name="FindBooks" class="hit.cs.kevin.ManageBooksAction" method="findBooks">
+            <result name="success">/findBooks.jsp</result>
+            <result name="fail">/notFindBooks.jsp</result>
+        </action>
+    </package>
+</struts> 
