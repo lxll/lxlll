@@ -10,7 +10,7 @@
 <title>Book</title>
 </head>
 <body>
-	<h3>Details</h3>
+	<h2>Details</h2>
 	<s:form action="backHome">
         <s:textfield name="book.isbn" label="ISBN" />
         <s:textfield name="book.title" label="Title" />

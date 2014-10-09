@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
- <h2>Book List</h2>
+ <h3>Book List</h3>
     <s:form >
         <table cellspacing="0">
             <thead>
